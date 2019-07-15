@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Stamp Coding Challenge</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+  <div id="tint"></div>
+
+  <header>
+    <img src="./assets/images/logo.png" alt="logo" id="logo">
+    <nav>
+      <p><a href="#">About</a></p>
+      <p><a href="#">Integrations</a></p>
+      <p><a href="#">Pricing</a></p>
+      <p><a href="#">Contacts</a></p>
+    </nav>
+    <img src="./assets/images/menu-icon.png" alt="menu-icon" id="menu-icon">
+  </header>
+
+  <section id="main">
+    <div id="title">
+      <h1>Simple Way to Organize Your Inspirations</h1>
+      <p>I think what motivates people is not great hate,
+but great love for other people. </p>
+    </div>
+    <div id="form">
+      <p>Sign up for free</p>
+      <form action="submit">
+        <input name="name" placeholder="Name">
+        <input name="email" placeholder="E-mail">
+        <input id="password"name="password" type="password" placeholder="Password">
+        <img id="pass-icon" src="./assets/images/password-icon.png" alt="password-icon" onclick="togglePassword()">
+        <button>Sign up <img id="chevron"src="./assets/images/chevron-right.png" alt="chevron-right"></button>
+      </form>
+      <p id="legal">By clicking "Sign up" I agree to our <br>
+<span><a href="#">Terms of Service</a></span>.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p id="copyright">© 2016 Stamp. All Rights Reserved</p>
+    <nav>
+      <p><a href="#">CONTACT</a></p>
+      <p><a href="#">HELP</a></p>
+      <p><a href="#">TERMS OF USE</a></p>
+      <p><a href="#">PRIVACY POLICY</a></p>
+    </nav>
+  </footer>
+
+  <script src="./script/main.js" charset="utf-8"></script>
+</body>
+</html>

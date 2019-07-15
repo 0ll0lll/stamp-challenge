@@ -1,0 +1,299 @@
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Avenir-next';
+  src: url(../assets/fonts/AvenirNext-DemiBold.ttf)
+}
+
+* {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #1B1B1B;
+  background-image: url(../assets/images/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+#tint {
+  height: 100%;
+  width: 100%;
+  background-color: #1B1B1B;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  z-index: -999;
+}
+/* HEADER */
+
+header, footer {
+  position: relative;
+  box-sizing: border-box;
+  height: 60pt;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4%;
+  z-index: 999;
+}
+
+header nav p, footer nav p {
+  font-family: 'Roboto-Regular';
+  font-size: 16px;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+p :hover {
+  border-bottom: 2px solid white;
+}
+
+#logo {
+  height: 33px;
+}
+
+#menu-icon {
+  height: 19px;
+}
+
+/* MAIN */
+
+#main {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#title {
+  width: 30%;
+  margin-right: 15%;
+}
+
+#title h1 {
+  font-family: 'Avenir-Next';
+  font-size: 54px;
+  letter-spacing: -4px;
+  line-height: 70px;
+  margin-bottom: 0;
+}
+
+#title p {
+  font-family: 'Roboto-Regular';
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  line-height: 24px;
+}
+
+#form {
+  width: 28%;
+}
+
+#form p {
+  font-family: 'Avenir-Next';
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+form {
+  position: relative;
+  height: 180px;
+  border-radius: 4px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-bottom: none;
+  margin-bottom: 24px;
+}
+
+#form input, #form button {
+  font-family: 'Roboto-Regular';
+  color: white;
+  border: 0;
+  padding: 0;
+  width: 100%;
+  height: calc(180px / 4);
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#form input {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+  font-size: 13px;
+  padding-left: 10px;
+  outline: none;
+}
+
+#form input:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#form button {
+  font-family: 'Roboto-Regular';
+  font-size: 13px;
+  position: relative;
+  left: -2px;
+  border-radius: 0 0 4px 4px;
+  background: #2C99ED;
+  border: 2px solid #2C99ED;
+  width: calc(100% + 4px);
+}
+
+#pass-icon {
+  height: 16px;
+  position: absolute;
+  bottom: calc((180px / 4) + 14px);
+  right: 10px;
+}
+
+#pass-icon:hover {
+  cursor: pointer
+}
+
+#chevron {
+  height: 8px;
+  margin-left: 10px;
+}
+
+#form #legal {
+  font-size: 12px;
+  text-transform: none;
+  letter-spacing: 0;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 20px;
+}
+
+#form span {
+  color: white;
+}
+
+/* FOOTER */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+}
+
+footer nav {
+  margin-right: -20px;
+}
+
+footer #copyright {
+  font-family: 'Roboto-Regular';
+  font-size: 10px;
+}
+
+footer nav p {
+  font-family: 'Avenir-Next';
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  body {
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  #tint {
+    height: 100%;
+    position: fixed;
+  }
+
+  header {
+    margin-top: 20px;
+    flex-direction: column;
+    height: 140px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+    height: auto;
+  }
+
+  header nav p {
+    margin: 10px;
+  }
+
+  #menu-icon {
+    position: absolute;
+    top: 4px;
+    right: 20px;
+  }
+
+  #main {
+    width: 100%;
+    display: block;
+    position: relative;
+    margin-top: 130px;
+  }
+
+  #title {
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  #title h1 {
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: -1px;
+  }
+
+  #title p {
+    font-size: 14px;
+  }
+
+  #form {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+
+  footer {
+    text-align: center;
+    height: auto;
+    margin-top: 20px;
+    position: relative;
+    flex-direction: column-reverse;
+  }
+
+  nav {
+    height: auto;
+  }
+
+  footer nav p {
+    margin: 10px 20px;
+  }
+}
